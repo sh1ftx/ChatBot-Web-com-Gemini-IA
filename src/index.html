@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Configurações de metadados do documento -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para garantir responsividade em dispositivos móveis -->
+    <title>GeniusBot - IA para ADS</title> <!-- Título da aba do navegador -->
+    
+    <!-- Inclusão do arquivo CSS para estilos -->
+    <link rel="stylesheet" href="style.css"> 
+    
+    <!-- Inclusão do JavaScript principal -->
+    <script type="module" src="app.js" defer></script> <!-- Inclui o arquivo JavaScript app.js, carregado de forma assíncrona -->
+    
+    <!-- Importação de módulos JavaScript externos -->
+    <script type="importmap">
+        {
+            "imports": {
+                "@google/generative-ai": "https://esm.run/@google/generative-ai"
+            }
+        }
+    </script>
+
+    <!-- Inclusão de outro script JavaScript -->
+    <script type="module" src="script.js"></script> <!-- Inclui o arquivo JavaScript script.js, carregado como módulo -->
+    
+    <!-- Inclusão de bibliotecas externas -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> <!-- Biblioteca para conversão de Markdown para HTML -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> <!-- Biblioteca para renderização de fórmulas em LaTeX -->
+</head>
+<body>
+    <!-- Contêiner principal da página -->
+    <div class="page">
+        <!-- Contêiner da interface de chat -->
+        <div class="chat-container">
+            <!-- Barra lateral com tópicos -->
+            <div class="sidebar">
+                <!-- Cabeçalho da barra lateral -->
+                <div class="sidebar-header">
+                    <h2>Recentes</h2> <!-- Título da seção de tópicos -->
+                </div>
+                <!-- Botão para adicionar novos tópicos -->
+                <button id="new-topic-button">Novo Tópico</button>
+                <!-- Lista de tópicos (será preenchida dinamicamente) -->
+                <div class="topics-list">
+                    <!-- Menu de contexto -->
+        <div id="context-menu" class="context-menu" style="display: none;">
+             <ul>
+                <li id="edit-topic">Editar</li>
+                <li id="delete-topic">Deletar</li>
+                <li id="pin-topic">Fixar</li>
+             </ul>
+        </div>
+
+                    <!-- Lista de tópicos será adicionada dinamicamente aqui -->
+                </div>
+            </div>
+            <!-- Conteúdo principal do chat -->
+            <div class="chat-content">
+                <!-- Cabeçalho do chat -->
+                <div class="chat-header">
+                    <h1>TICO IA - O CHATBOT DE EXATAS COM IA</h1> <!-- Título do chat -->
+                </div>
+                <!-- Área onde as mensagens do chat serão exibidas -->
+                <div class="chat-box" id="chat-box">
+                    <!-- Mensagens do chat vão aparecer aqui -->
+                </div>
+                <!-- Container para a entrada do usuário -->
+                <div class="input-container">
+                    <!-- Campo de entrada de texto para o usuário -->
+                    <input type="text" id="user-input" placeholder="Digite sua pergunta...">
+                    <!-- Botão para enviar a mensagem -->
+                    <button id="send-button">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,315 @@
+/* ------------------------ Estilos Gerais ------------------------------- */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #021024; /* Fundo escuro e profundo */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #C1E8FF; /* Cor clara para contraste */
+}
+
+/* ------------------------ Personalização da Barra de Rolagem ------------------------------- */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #052659; /* Azul escuro */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5483B3; /* Azul moderado */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7DA0CA; /* Azul claro */
+}
+
+/* ------------------------ Página de Login e Cadastro ------------------------------- */
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  width: 90%;
+  max-width: 400px;
+  background-color: #052659; /* Azul escuro */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-container h2 {
+  margin: 0 0 20px;
+  color: #C1E8FF; /* Azul muito claro */
+  text-align: center;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #7DA0CA; /* Azul claro */
+  border-radius: 5px;
+  background-color: #021024; /* Fundo muito escuro */
+  color: #C1E8FF; /* Texto claro */
+  outline: none;
+}
+
+.login-container input::placeholder {
+  color: #5483B3; /* Azul moderado */
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5483B3; /* Azul moderado */
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.login-container button:hover {
+  background-color: #7DA0CA; /* Azul claro */
+}
+
+.login-container p {
+  text-align: center;
+  color: #C1E8FF; /* Azul muito claro */
+}
+
+.login-container a {
+  color: #7DA0CA; /* Azul claro */
+  text-decoration: none;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------ Chat Interface ------------------------------- */
+.chat-container {
+  display: flex;
+  width: 90vw;
+  max-width: 1200px;
+  height: 90vh;
+  background-color: #021024; /* Fundo escuro */
+  border-radius: 15px;
+  border: 3px solid transparent;
+  background: linear-gradient(135deg, #052659, #5483B3, #7DA0CA); /* Gradiente suave com azul e verde */
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #052659; /* Azul escuro */
+  border-right: 3px solid transparent;
+  border-right: 3px solid linear-gradient(135deg, #052659, #5483B3, #7DA0CA); /* Gradiente com azul e verde */
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  background-color: #021024; /* Fundo muito escuro */
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #052659; /* Azul escuro */
+}
+
+#new-topic-button {
+  background-color: #5483B3; /* Azul moderado */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+#new-topic-button:hover {
+  background-color: #7DA0CA; /* Azul claro */
+}
+
+.topics-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #021024; /* Fundo muito escuro */
+}
+
+.topic-item {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #5483B3, #7DA0CA); /* Gradiente com azul claro */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.topic-item:hover {
+  background: linear-gradient(135deg, #7DA0CA, #5483B3); /* Reverso do gradiente para hover */
+}
+
+.chat-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background-color: #021024; /* Fundo muito escuro */
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #052659; /* Azul escuro */
+}
+
+.chat-header h1 {
+  margin: 0;
+  color: #C1E8FF; /* Azul muito claro */
+  font-size: 1.8rem;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background-color: #021024; /* Fundo muito escuro */
+  color: #C1E8FF; /* Texto claro */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  max-width: 80%;
+  padding: 10px;
+  border-radius: 15px;
+  line-height: 1.4;
+  display: inline-block;
+  word-wrap: break-word;
+}
+
+.user-message {
+  background: linear-gradient(135deg, #5483B3, #7DA0CA); /* Gradiente com azul claro */
+  color: #fff;
+  align-self: flex-end;
+  text-align: right;
+  border-bottom-right-radius: 0;
+}
+
+.bot-message {
+  background: linear-gradient(135deg, #7DA0CA, #052659); /* Gradiente com azul escuro e claro */
+  color: #fff;
+  align-self: flex-start;
+  text-align: left;
+  border-bottom-left-radius: 0;
+}
+
+.input-container {
+  display: flex;
+  padding: 10px;
+  background-color: #052659; /* Azul escuro */
+  border-top: 1px solid #021024; /* Fundo muito escuro */
+}
+
+#user-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #021024; /* Fundo muito escuro */
+  color: #C1E8FF; /* Texto claro */
+  outline: none;
+}
+
+#user-input::placeholder {
+  color: #7DA0CA; /* Azul claro */
+}
+
+#send-button {
+  background-color: #5483B3; /* Azul moderado */
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+#send-button:hover {
+  background-color: #7DA0CA; /* Azul claro */
+}
+
+/* ------------------------ Estilos para formatação acadêmica conforme ABNT ------------------------------- */
+.academic-text {
+  font-family: 'Times New Roman', serif;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.academic-text h1, .academic-text h2, .academic-text h3 {
+  font-weight: bold;
+}
+
+.academic-text p {
+  margin: 10px 0;
+}
+
+.context-menu {
+  position: absolute;
+  background-color: #021024; /* Fundo muito escuro */
+  color: #C1E8FF; /* Texto claro */
+  border: 1px solid #052659; /* Azul escuro */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.context-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.context-menu li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.context-menu li:hover {
+  background-color: #052659; /* Azul escuro */
+}
+
+.topic-item {
+  position: relative;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #5483B3, #7DA0CA); /* Gradiente com azul claro */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.topic-item:hover {
+  background: linear-gradient(135deg, #7DA0CA, #5483B3); /* Reverso do gradiente para hover */
+}
