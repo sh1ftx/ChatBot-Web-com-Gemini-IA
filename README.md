@@ -6,7 +6,7 @@
 
 🚀 **Transforme a forma como você interage com a ciência!** 🚀
 
-Bem-vindo ao [Nome do Projeto]! Este é um chatbot inovador projetado para responder perguntas e auxiliar com desafios nas áreas de Ciências Exatas e Engenharia. Utilizando a mais avançada tecnologia de IA generativa, nosso bot é seu novo parceiro de estudos e solução de problemas.
+Bem-vindo ao ChatBot de extas com IA! Este é um chatbot inovador projetado para responder perguntas e auxiliar com desafios nas áreas de Ciências Exatas e Engenharia. Utilizando a mais avançada tecnologia de IA generativa, nosso bot é seu novo parceiro de estudos e solução de problemas.
 
 ### 🌟 **Características Principais**
 
